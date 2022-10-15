@@ -1,0 +1,258 @@
+<html>
+<head>
+  <title>Real Time Image Identification App</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.js"></script>
+  <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+<center>
+  <h3 class="heading">Case study between google lens and mobilnet</h3>
+  <h2 class="google_lens">GOOGLE LENS<img src="images/google_lens.jpg" width="350" height="200"></h2>
+  <h3>VS</h3>
+  <br><br>
+  <p class="btn btn-primary result_para_tag">Mobilnet</p>
+  <br><br><br>
+
+ <ol>
+  <div class="outer">
+    <div class="test_image_and_result" class="col-xs-12">
+      <li class="col-sm-4 col-xs-12">
+        <b>Test Image - </b>
+        <img src="images/Hydro-Flask-Water-Bottle-1.jpg" class="img-responsive">
+      </li>
+      
+      <h5 class="col-sm-4 col-xs-12">
+        Output On <b style="color: blueviolet;">GOOGLE LENS - Hydro Flask</b>
+        <span></span>
+      </h5>
+
+      <h5 class="col-sm-4 col-xs-12">
+        Output On <b style="color: blueviolet;">Mobilnet Model - Water Bottle</b>
+        <span></span>
+      </h5>
+
+      <div class="mini_result" class="col-xs-12">
+        <h4>Result - Google Lens is more accurate </h4>
+        <hr>
+        <h4></h4>
+      </div>
+    </div>
+  </div>
+ </ol>
+<br>
+ <ol>
+  <div class="outer">
+    <div class="test_image_and_result" class="col-xs-12">
+      <li class="col-sm-4 col-xs-12">
+        <b>Test Image - </b>
+        <img src="images/LAMBORGHINI.jpg" class="img-responsive">
+      </li>
+      
+      <h5 class="col-sm-4 col-xs-12">
+        Output On <b style="color: blueviolet;">GOOGLE LENS - Lamborghini Terzo Millennio</b>
+        <span></span>
+      </h5>
+
+      <h5 class="col-sm-4 col-xs-12">
+        Output On <b style="color: blueviolet;">Mobilnet Model - Racing Car</b>
+        <span></span>
+      </h5>
+
+      <div class="mini_result" class="col-xs-12">
+        <h4>Result - Goggle Lens is more accurate </h4>
+        <hr>
+        <h4></h4>
+      </div>
+    </div>
+  </div>
+ </ol>
+ <br>
+ <ol>
+  <div class="outer">
+    <div class="test_image_and_result" class="col-xs-12">
+      <li class="col-sm-4 col-xs-12">
+        <b>Test Image - </b>
+        <img src="images/LENEVO.jfif" class="img-responsive">
+      </li>
+      
+      <h5 class="col-sm-4 col-xs-12">
+        Output On <b style="color: blueviolet;">GOOGLE LENS - Lenovo Legion 7</b>
+        <span></span>
+      </h5>
+
+      <h5 class="col-sm-4 col-xs-12">
+        Output On <b style="color: blueviolet;">Mobilnet Model - Desktop Computer</b>
+        <span></span>
+      </h5>
+
+      <div class="mini_result" class="col-xs-12">
+        <h4>Result - Goggle Lens is more accurate</h4>
+        <hr>
+        <h4></h4>
+      </div>
+    </div>
+  </div>
+ </ol>
+<br>
+ <ol>
+  <div class="outer">
+    <div class="test_image_and_result" class="col-xs-12">
+      <li class="col-sm-4 col-xs-12">
+        <b>Test Image - </b>
+        <img src="images/ps5-product-thumbnail-01-en-14sep21.webp" class="img-responsive">
+      </li>
+      
+      <h5 class="col-sm-4 col-xs-12">
+        Output On <b style="color: blueviolet;">GOOGLE LENS - Sony PlayStation 5</b>
+        <span></span>
+      </h5>
+
+      <h5 class="col-sm-4 col-xs-12">
+        Output On <b style="color: blueviolet;">Mobilnet Model - Electric switch</b>
+        <span></span>
+      </h5>
+
+      <div class="mini_result" class="col-xs-12">
+        <h4>Result - Goggle Lens is more accurate</h4>
+        <hr>
+        <h4></h4>
+      </div>
+    </div>
+  </div>
+ </ol>
+<br>
+ <ol>
+  <div class="outer">
+    <div class="test_image_and_result" class="col-xs-12">
+      <li class="col-sm-4 col-xs-12">
+        <b>Test Image - </b>
+        <img src="images/vw-ego-2028-concept-motorauthority-001_100209805.jpg" class="img-responsive">
+      </li>
+      
+      <h5 class="col-sm-4 col-xs-12">
+        Output On <b style="color: blueviolet;">GOOGLE LENS - Volkswagen Concept A</b>
+        <span></span>
+      </h5>
+
+      <h5 class="col-sm-4 col-xs-12">
+        Output On <b style="color: blueviolet;">Mobilnet Model - Crash helmet</b>
+        <span></span>
+      </h5>
+
+      <div class="mini_result" class="col-xs-12">
+        <h4>Result - Goggle Lens is more accurate</h4>
+        <hr>
+        <h4></h4>
+      </div>
+    </div>
+  </div>
+ </ol>
+<br>
+<ol>
+  <div class="outer">
+    <div class="test_image_and_result" class="col-xs-12">
+      <li class="col-sm-4 col-xs-12">
+        <b>Test Image - </b>
+        <img src="images/iPHONE.jpg" class="img-responsive">
+      </li>
+      
+      <h5 class="col-sm-4 col-xs-12">
+        Output On <b style="color: blueviolet;">GOOGLE LENS - TCL 20 XE</b>
+        <span></span>
+      </h5>
+
+      <h5 class="col-sm-4 col-xs-12">
+        Output On <b style="color: blueviolet;">Mobilnet Model - Cellfone</b>
+        <span></span>
+      </h5>
+
+      <div class="mini_result" class="col-xs-12">
+        <h4>Result - Goggle Lens is more accurate</h4>
+        <hr>
+        <h4></h4>
+      </div>
+    </div>
+  </div>
+ </ol>
+<br>
+<ol>
+  <div class="outer">
+    <div class="test_image_and_result" class="col-xs-12">
+      <li class="col-sm-4 col-xs-12">
+        <b>Test Image - </b>
+        <img src="images/lafayette-natural-upholstered-bed.jpg" class="img-responsive">
+      </li>
+      
+      <h5 class="col-sm-4 col-xs-12">
+        Output On <b style="color: blueviolet;">GOOGLE LENS - Lafayette Ivory Bed</b>
+        <span></span>
+      </h5>
+
+      <h5 class="col-sm-4 col-xs-12">
+        Output On <b style="color: blueviolet;">Mobilnet Model - Studio Couch, day bed</b>
+        <span></span>
+      </h5>
+
+      <div class="mini_result" class="col-xs-12">
+        <h4>Result - Goggle Lens is more accurate</h4>
+        <hr>
+        <h4></h4>
+      </div>
+    </div>
+  </div>
+ </ol>
+<br>
+<ol>
+  <div class="outer">
+    <div class="test_image_and_result" class="col-xs-12">
+      <li class="col-sm-4 col-xs-12">
+        <b>Test Image - </b>
+        <img src="images/warden.jfif" class="img-responsive">
+      </li>
+      
+      <h5 class="col-sm-4 col-xs-12">
+        Output On <b style="color: blueviolet;">GOOGLE LENS - Warden Minecraft Statue</b>
+        <span></span>
+      </h5>
+
+      <h5 class="col-sm-4 col-xs-12">
+        Output On <b style="color: blueviolet;">Mobilnet Model - bookcase</b>
+        <span></span>
+      </h5>
+
+      <div class="mini_result" class="col-xs-12">
+        <h4>Result - Goggle Lens is more accurate</h4>
+        <hr>
+        <h4></h4>
+      </div>
+    </div>
+  </div>
+ </ol>
+<br>
+<div class="conclusion">
+  I have tested <b>8</b> images.<br>
+  <span style="color:brown">GOOGLE LENS</span> has predicted all of them more accurate.
+  In some cases <span style="color:blue">MOBILNET</span> did very extreme predictions which was not even close to the reality.
+</div>
+</center>
+<br><br><br>
+
+
+
+<div class="copy_right_footer">
+Developed by - Krisztian Anyos
+</div>
+
+<script src="main.js"></script>
+</body>
+
+</html>
+

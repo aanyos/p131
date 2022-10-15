@@ -1,0 +1,80 @@
+  .heading
+  {
+    font-size: 23px;
+    width: 100%;
+    margin: 0px;
+    box-shadow:1px 1px 1px grey;
+    color: red;
+    text-transform: uppercase;
+  }
+
+  .result_para_tag
+  {
+    box-shadow:5px 5px 5px grey;
+    font-size: 20px;
+  }
+
+   .google_lens
+  {
+    font-size: 18px ;
+  }
+
+  .test_image_and_result {
+    display: inline-block;
+    margin: 0 auto;
+    box-shadow: 12px 12px 12px grey;
+    height: auto;
+    background-color: darkgray;
+    border-radius: 20px;
+    padding:30px;
+  }
+
+  .mini_result 
+  {
+    color: white;
+  }
+
+ h5
+{
+  background-color: white;
+  border-radius: 30px;
+  padding: 5px;
+} 
+ 
+li 
+{
+  text-align: left;
+}
+
+.img-responsive
+{
+  height: auto;
+  max-height: 600px;
+}
+
+ .copy_right_footer
+ {
+  position: fixed;
+  color: white;
+  bottom: 0;
+  width: 100%;
+  background-color: grey;
+  line-height: 3;
+  text-align: center;
+ }
+
+.outer
+{
+  width: 100%;
+  text-align: center;
+}
+
+.conclusion{
+  font-size: 23px;
+  width: 50%;
+  margin: 0px;
+  box-shadow:5px 5px 5px orangered;
+  border-radius: 10px;
+  color: white;
+  background-color: orange;
+}
